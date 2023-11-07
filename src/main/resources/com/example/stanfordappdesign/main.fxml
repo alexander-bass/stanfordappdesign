@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -26,6 +27,7 @@
             <Button fx:id="applyNowButton" layoutX="128.0" layoutY="100.0" mnemonicParsing="false" onAction="#onApplyNowButtonClick" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #9d2235;" text="Apply Now!" textFill="WHITE" />
             <Button fx:id="generateApplicantsButton" layoutX="128.0" layoutY="150.0" mnemonicParsing="false" onAction="#onGenerateApplicantsButtonClick" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: #9d2235;" text="Generate Applicants" textFill="WHITE" />
             <Label fx:id="welcomeText" layoutX="94.0" layoutY="48.0" text="Welcome to the Stanford Medical School Application!" textFill="WHITE" />
+            <TextField fx:id="numApplicantsTextField" layoutX="128.0" layoutY="196.0" prefHeight="30.0" prefWidth="264.0" promptText="Enter number of applicants to generate..." />
          </children>
       </AnchorPane>
    </bottom>

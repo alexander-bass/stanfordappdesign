@@ -32,9 +32,12 @@ public class MainController {
 
     @FXML
     private Button generateApplicantsButton;
+
+    @FXML TextField numApplicantsTextField;
     @FXML
     protected void onGenerateApplicantsButtonClick(ActionEvent event) throws IOException {
-        generateApplicants();
+        int numApplicants = Integer.parseInt(numApplicantsTextField.getText());
+        generateApplicants(numApplicants);
     }
 
 
@@ -53,10 +56,9 @@ public class MainController {
         }
     }
 
-    public void generateApplicants() throws IOException {
+    public void generateApplicants(int numApplicants) throws IOException {
         Faker faker = new Faker();
         Random random = new Random();
-        int numApplicants = 100;
 
         List<Applicant> applicants = new ArrayList<>();
 

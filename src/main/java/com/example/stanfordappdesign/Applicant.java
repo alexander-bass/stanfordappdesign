@@ -3,24 +3,24 @@ package com.example.stanfordappdesign;
 public class Applicant {
 
     // fluff
-    public String name;
+    private String name;
 
     // eligibility
-    public String countryOfOrigin;
-    public boolean studiedInUs;
-    public String highestDegree;
-    public boolean mcatTaken;
-    public boolean prevMatriculation;
+    private String countryOfOrigin;
+    private boolean studiedInUs;
+    private String highestDegree;
+    private boolean mcatTaken;
+    private boolean prevMatriculation;
 
     // variables to score
-    public double gpa;
-    public int mcatScore;
-    public String coursework;
-    public String lettersOfRecommendation;
-    public String workExperience;
-    public String essay;
-    public String schoolAttended;
-    public boolean firstGeneration;
+    private double gpa;
+    private int mcatScore;
+    private String coursework;
+    private String lettersOfRecommendation;
+    private String workExperience;
+    private String essay;
+    private String schoolAttended;
+    private boolean firstGeneration;
 
 
     // total score
