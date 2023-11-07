@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stanfordappdesign.ApplicationController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="720.0" style="-fx-background-color: #9d2235;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/stanford_medicine_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="50.0" prefWidth="720.0" style="-fx-background-color: #9d2235;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <ScrollPane prefHeight="500.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="1030.0" prefWidth="700.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <SplitPane dividerPositions="0.5" prefHeight="30.0" prefWidth="700.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TextField fx:id="nameTextField" layoutX="120.0" layoutY="1.0" />
+                              <Label layoutX="30.0" layoutY="5.0" text="Full Name:" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <DatePicker fx:id="dobDatePicker" layoutX="120.0" layoutY="1.0" />
+                              <Label layoutX="30.0" layoutY="5.0" text="DOB:" />
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+                  <AnchorPane prefHeight="30.0" prefWidth="700.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Country of origin: " />
+                        <TextField fx:id="countryOfOriginTextField" layoutX="150.0" layoutY="1.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="60.0" prefHeight="30.0" prefWidth="641.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Have you attended college in the U.S. for at least one year?" />
+                        <CheckBox fx:id="studiedInUsCheckBox" alignment="CENTER" layoutX="400.0" layoutY="5.0" mnemonicParsing="false" text="Yes" AnchorPane.topAnchor="5.0" />
+                        <CheckBox layoutX="460.0" layoutY="5.0" mnemonicParsing="false" text="No" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="60.0" prefHeight="30.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Highest level of degree:" />
+                        <TextField fx:id="degreeTextField" layoutX="190.0" layoutY="1.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="100.0" prefHeight="30.0" prefWidth="641.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Have you taken the MCAT?" />
+                        <CheckBox fx:id="mcatCheckBox" alignment="CENTER" layoutX="200.0" layoutY="5.0" mnemonicParsing="false" text="Yes" AnchorPane.topAnchor="5.0" />
+                        <CheckBox layoutX="260.0" layoutY="5.0" mnemonicParsing="false" text="No" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="140.0" prefHeight="30.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="MCAT Score:" />
+                        <TextField fx:id="mcatTextField" layoutX="120.0" layoutY="1.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="100.0" prefHeight="30.0" prefWidth="641.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Have you previously attended medical school?" />
+                        <CheckBox fx:id="prevMatriculationCheckBox" alignment="CENTER" layoutX="320.0" layoutY="5.0" mnemonicParsing="false" text="Yes" AnchorPane.topAnchor="5.0" />
+                        <CheckBox layoutX="380.0" layoutY="5.0" mnemonicParsing="false" text="No" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="220.0" prefHeight="30.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="College GPA:" />
+                        <TextField fx:id="gpaTextField" layoutX="120.0" layoutY="1.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="130.0" prefWidth="700.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Coursework:" />
+                        <TextArea fx:id="courseWorkTextArea" layoutX="30.0" layoutY="23.0" prefHeight="100.0" prefWidth="650.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="340.0" prefHeight="130.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Letters of Recommendation:" />
+                        <TextArea fx:id="lettersOfRecTextArea" layoutX="30.0" layoutY="23.0" prefHeight="100.0" prefWidth="650.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="480.0" prefHeight="130.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Work Experience:" />
+                        <TextArea fx:id="workExperienceTextArea" layoutX="30.0" layoutY="23.0" prefHeight="100.0" prefWidth="650.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="620.0" prefHeight="130.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Essay:" />
+                        <TextArea fx:id="essayTextArea" layoutX="30.0" layoutY="23.0" prefHeight="100.0" prefWidth="650.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="140.0" prefHeight="30.0" prefWidth="700.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Last college attended:" />
+                        <TextField fx:id="schoolAttendedTextField" layoutX="190.0" layoutY="1.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="260.0" prefHeight="30.0" prefWidth="641.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="5.0" text="Are you a first generation student?" />
+                        <CheckBox fx:id="firstGenCheckBox" alignment="CENTER" layoutX="250.0" layoutY="5.0" mnemonicParsing="false" text="Yes" AnchorPane.topAnchor="5.0" />
+                        <CheckBox layoutX="310.0" layoutY="5.0" mnemonicParsing="false" text="No" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="30.0" prefWidth="700.0">
+                     <children>
+                        <Button fx:id="submitButton" layoutX="530.0" layoutY="3.0" mnemonicParsing="false" onAction="#onSubmitButtonClick" text="Submit" />
+                        <Button fx:id="closeButton" layoutX="606.0" layoutY="3.0" mnemonicParsing="false" onAction="#onCloseButtonClick" text="Close" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
